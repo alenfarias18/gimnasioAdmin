@@ -3,7 +3,10 @@ package com.example.gimnasio;
 
 import android.Manifest;
 import android.app.DatePickerDialog;
+<<<<<<< HEAD
 import android.content.Context;
+=======
+>>>>>>> e2b576f4704cd2923fcd01cb554e4793f5be1b54
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -18,6 +21,7 @@ import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+<<<<<<< HEAD
 import android.widget.*;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -27,6 +31,12 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import de.hdodenhof.circleimageview.CircleImageView;
 import org.json.JSONObject;
+=======
+import android.widget.DatePicker;
+import android.widget.ImageButton;
+import android.widget.NumberPicker;
+import de.hdodenhof.circleimageview.CircleImageView;
+>>>>>>> e2b576f4704cd2923fcd01cb554e4793f5be1b54
 
 import java.util.Calendar;
 
@@ -36,7 +46,11 @@ import static com.example.gimnasio.R.color.colorAccent;
 /**
  * A simple {@link Fragment} subclass.
  */
+<<<<<<< HEAD
 public class agregarEvaluacion extends Fragment  {
+=======
+public class agregarEvaluacion extends Fragment {
+>>>>>>> e2b576f4704cd2923fcd01cb554e4793f5be1b54
 
 
     public agregarEvaluacion() {
@@ -48,6 +62,7 @@ public class agregarEvaluacion extends Fragment  {
     final int mes = calendario.get(Calendar.MONTH);
     final int dia = calendario.get(Calendar.DAY_OF_MONTH);
     private TextInputEditText fechaNacimiento;
+<<<<<<< HEAD
     private TextInputEditText imc;
     private CircleImageView civ;
     private static final int REQUEST_IMAGE_CAPTURE = 1;
@@ -55,6 +70,12 @@ public class agregarEvaluacion extends Fragment  {
     private Button button;
     private String usuario;
 
+=======
+    TextInputEditText imc;
+    CircleImageView civ;
+    static final int REQUEST_IMAGE_CAPTURE = 1;
+    static final int RESULT_OK = -1;
+>>>>>>> e2b576f4704cd2923fcd01cb554e4793f5be1b54
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -74,6 +95,7 @@ public class agregarEvaluacion extends Fragment  {
             }
         });
 
+<<<<<<< HEAD
         final NumberPicker pickerPeso = (NumberPicker)vista.findViewById(R.id.picker2);
         pickerPeso.setMinValue(0);
         pickerPeso.setMaxValue(160);
@@ -83,11 +105,26 @@ public class agregarEvaluacion extends Fragment  {
         pickerCintura.setMaxValue(100);
 
         final NumberPicker grasa = (NumberPicker)vista.findViewById(R.id.picker4);
+=======
+        NumberPicker pickerPeso = (NumberPicker)vista.findViewById(R.id.picker2);
+        pickerPeso.setMinValue(0);
+        pickerPeso.setMaxValue(160);
+
+        NumberPicker pickerCintura = (NumberPicker)vista.findViewById(R.id.picker3);
+        pickerCintura.setMinValue(0);
+        pickerCintura.setMaxValue(100);
+
+        NumberPicker grasa = (NumberPicker)vista.findViewById(R.id.picker4);
+>>>>>>> e2b576f4704cd2923fcd01cb554e4793f5be1b54
         grasa.setMinValue(0);
         grasa.setMaxValue(100);
 
 
+<<<<<<< HEAD
         final NumberPicker estatura = (NumberPicker)vista.findViewById(R.id.picker5);
+=======
+        NumberPicker estatura = (NumberPicker)vista.findViewById(R.id.picker5);
+>>>>>>> e2b576f4704cd2923fcd01cb554e4793f5be1b54
         estatura.setMinValue(100);
         estatura.setMaxValue(200);
 
@@ -100,6 +137,7 @@ public class agregarEvaluacion extends Fragment  {
             }
         });
 
+<<<<<<< HEAD
 
         Bundle bundle = this.getArguments();
         usuario = bundle.getString("usuario");
@@ -139,6 +177,8 @@ public class agregarEvaluacion extends Fragment  {
             }
         });
 
+=======
+>>>>>>> e2b576f4704cd2923fcd01cb554e4793f5be1b54
         return vista;
 
 
@@ -165,7 +205,11 @@ public class agregarEvaluacion extends Fragment  {
                 final int mes2 = month+1;
                 String diaFormato = (dayOfMonth<10)?cero+String.valueOf(dayOfMonth):String.valueOf(dayOfMonth);
                 String mesFormato = (mes<10)?cero+String.valueOf(mes2):String.valueOf(mes2);
+<<<<<<< HEAD
                 fechaNacimiento.setText(year+"-"+mesFormato+"-"+diaFormato);
+=======
+                fechaNacimiento.setText(diaFormato+"/"+mesFormato+"/"+year);
+>>>>>>> e2b576f4704cd2923fcd01cb554e4793f5be1b54
 
             }
         },anio,mes,dia);
@@ -182,7 +226,10 @@ public class agregarEvaluacion extends Fragment  {
         }
     }
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> e2b576f4704cd2923fcd01cb554e4793f5be1b54
 }

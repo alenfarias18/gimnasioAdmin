@@ -2,12 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.gimnasio">
 
+<<<<<<< HEAD
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <uses-feature
             android:name="android.hardware.camera"
             android:required="true"/>
 
+=======
+>>>>>>> e2b576f4704cd2923fcd01cb554e4793f5be1b54
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -15,11 +18,15 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity
                 android:name=".Inicio"
                 android:label="@string/title_activity_inicio"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
+=======
+
+>>>>>>> e2b576f4704cd2923fcd01cb554e4793f5be1b54
         <activity android:name=".agEvaluacion">
         </activity>
         <activity
@@ -36,5 +43,10 @@
                 android:name="preloaded_fonts"
                 android:resource="@array/preloaded_fonts"/>
     </application>
+<<<<<<< HEAD
 
+=======
+    <uses-feature android:name="android.hardware.camera"
+                  android:required="true" />
+>>>>>>> e2b576f4704cd2923fcd01cb554e4793f5be1b54
 </manifest>

@@ -2,12 +2,18 @@ package com.example.gimnasio;
 
 
 import android.os.Bundle;
+<<<<<<< HEAD
 import android.support.design.widget.TextInputEditText;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.text.Editable;
 import android.text.TextWatcher;
+=======
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+>>>>>>> e2b576f4704cd2923fcd01cb554e4793f5be1b54
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +21,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+<<<<<<< HEAD
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -26,16 +33,23 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+=======
+>>>>>>> e2b576f4704cd2923fcd01cb554e4793f5be1b54
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class eliminarEvaluacion extends Fragment {
+<<<<<<< HEAD
     private RequestQueue requestQueQue;
     private String url;
     private  ListView list;
     private ArrayAdapter arrayAdapter;
+=======
+
+
+>>>>>>> e2b576f4704cd2923fcd01cb554e4793f5be1b54
     public eliminarEvaluacion() {
         // Required empty public constructor
     }
@@ -46,6 +60,7 @@ public class eliminarEvaluacion extends Fragment {
                              Bundle savedInstanceState) {
         View view =inflater.inflate(R.layout.fragment_eliminar_evaluacion, container, false);
         //Este codigo es para mostrar el uso de la app, luego sera sacado
+<<<<<<< HEAD
         list = (ListView)view.findViewById(R.id.ListViewEliminar);
         requestQueQue = Volley.newRequestQueue(view.getContext());
         TextInputEditText buscador = (TextInputEditText)view.findViewById(R.id.buscador2);
@@ -155,4 +170,21 @@ public class eliminarEvaluacion extends Fragment {
         requestQueQue.add(jsonObjectRequest);
 
     }
+=======
+        ListView list = (ListView)view.findViewById(R.id.ListViewEliminar);
+        String user[] = {"User1","User2","User3"};
+        ArrayAdapter<String> adaptador;
+        adaptador = new ArrayAdapter<String>(view.getContext(),android.R.layout.simple_list_item_1,user);
+        list.setAdapter(adaptador);
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getContext(),"Usuario eliminado",Toast.LENGTH_LONG).show();
+            }
+        });
+
+        return view;
+    }
+
+>>>>>>> e2b576f4704cd2923fcd01cb554e4793f5be1b54
 }

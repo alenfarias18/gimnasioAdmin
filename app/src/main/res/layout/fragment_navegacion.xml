@@ -14,6 +14,15 @@
                 android:layout_height="56dp" android:id="@+id/imageButton1" android:layout_weight="1"
                 android:background="?attr/selectableItemBackgroundBorderless" android:contentDescription="@string/add"/>
         <ImageButton
+<<<<<<< HEAD
+=======
+                android:src="@drawable/search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:id="@+id/imageButton2" android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/search"/>
+        <ImageButton
+>>>>>>> e2b576f4704cd2923fcd01cb554e4793f5be1b54
                 android:src="@drawable/delete"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent" android:id="@+id/imageButton3" android:layout_weight="1"

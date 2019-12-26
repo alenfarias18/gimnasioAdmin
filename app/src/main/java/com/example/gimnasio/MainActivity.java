@@ -1,12 +1,16 @@
 package com.example.gimnasio;
 
 import android.content.Intent;
+<<<<<<< HEAD
 import android.content.SharedPreferences;
+=======
+>>>>>>> e2b576f4704cd2923fcd01cb554e4793f5be1b54
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.view.View;
+<<<<<<< HEAD
 import android.widget.Toast;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -28,6 +32,12 @@ public class MainActivity extends AppCompatActivity {
     private String url;
     private String usuarioAdmin;
 
+=======
+
+public class MainActivity extends AppCompatActivity {
+    private TextInputEditText user;
+    private TextInputEditText password;
+>>>>>>> e2b576f4704cd2923fcd01cb554e4793f5be1b54
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,9 +57,16 @@ public class MainActivity extends AppCompatActivity {
             password.setError("Favor de rellenar con una contraseña valida.");
         }
         else{
+<<<<<<< HEAD
             requestQueQue = Volley.newRequestQueue(getApplicationContext());
                 BusquedaCuenta(user.getText().toString(),password.getText().toString());
                 usuarioAdmin=null;
+=======
+            //Condicional que sera usado para conectar con la DB y validar si los campos son correctos
+            //
+            Intent intent = new Intent(this,agEvaluacion.class);
+            startActivity(intent);
+>>>>>>> e2b576f4704cd2923fcd01cb554e4793f5be1b54
         }
     }
 
@@ -59,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
         confiGlobal config = new confiGlobal();
         config.noRotar(this);
     }
+<<<<<<< HEAD
     public void  BusquedaCuenta(String lUser,String lPassword) {
         datosSolicitud datosSolicitud = new datosSolicitud();
         final ArrayList<String> lista = new ArrayList<>();
@@ -108,4 +126,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+=======
+
+>>>>>>> e2b576f4704cd2923fcd01cb554e4793f5be1b54
 }

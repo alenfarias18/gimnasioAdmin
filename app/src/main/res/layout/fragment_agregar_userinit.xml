@@ -16,7 +16,10 @@
         >
 
             <android.support.design.widget.TextInputEditText
+<<<<<<< HEAD
                     android:id="@+id/buscador1"
+=======
+>>>>>>> e2b576f4704cd2923fcd01cb554e4793f5be1b54
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:maxLines="1"

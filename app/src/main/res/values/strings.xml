@@ -36,5 +36,8 @@
     <string name="grasa">% Grasa instrumento</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+<<<<<<< HEAD
     <string name="title_activity_inicio">Inicio</string>
+=======
+>>>>>>> e2b576f4704cd2923fcd01cb554e4793f5be1b54
 </resources>
